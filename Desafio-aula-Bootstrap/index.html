@@ -10,43 +10,88 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="imagens/logo-transparente.png" width="120px" height="50px" alt="logo exemplo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#quemsomos">Quem Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#parceiros">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#servicos">Serviços</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section id="quemsomos">
+        <div class="container-fluid quem-somos text-center margin ">
+          <h3>Quem somos?</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col lg-12">
+                <img class="rounded-pill" src="imagens/time.jpg" width="70%" >
+                <p class="texto">Somos um time comprometido com os <strong>resultados</strong></p>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+    </section>
 
+    <section id="parceiros">
+      <div class="container-fluid text-center margin parceiro">
+        <h3>Parceiros</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col lg-4">
+              <img src="imagens/logo-starbucks-256.png" alt="logo starbucks" width="70%">
+            </div>
+            <div class="col lg-4">
+              <img src="imagens/logo-apple-256.png" alt="logo apple" width="70%">
+            </div>
+            <div class="col lg-4">
+              <img src="imagens/coca-226144.png" alt="logo coca" width="70%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container-fluid text-center margin servico">
+        <h3>Serviços</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit dicta repellat cupiditate, saepe iure deserunt doloremque consequatur. Natus ipsum quisquam iusto molestias dolorum, amet incidunt repudiandae cum maxime facere.</p>
+              <img src="imagens/computador.jpg" alt="Serviço pelo Navegador" width="95%" >
+            </div>
+            <div class="col">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit dicta repellat cupiditate, saepe iure deserunt doloremque consequatur. Natus ipsum quisquam iusto molestias dolorum, amet incidunt repudiandae cum maxime facere.</p>
+              <img src="imagens/celular.jpg" alt="Serviço pelo Aplicativo" width="95%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid text-center">
+      <p>Desenvolvido por <a href="https://github.com/raissonls">Raisson Leal Silva</a></p>
+    </footer>
 
 </body>
 </html>

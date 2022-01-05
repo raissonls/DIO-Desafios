@@ -1,0 +1,51 @@
+
+.navbar{
+    background-color: #03850e88;
+}
+
+.quem-somos{
+    background-color: #15bbbe;
+    color: white;
+}
+
+h3{
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.margin{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.texto{
+    margin: 20px;
+    font-size: 1.3em;
+}
+.parceiro{
+    background-color: #e1c409 ;
+    color: white; 
+}
+
+.servico{
+    background-color: #0E942C;
+    color: white; 
+}
+footer{
+   padding: 20px; 
+   background-color: rgb(56, 66, 75);
+}
+
+footer > p{
+    margin: 0px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: none;
+    color: white;
+}
