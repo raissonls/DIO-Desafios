@@ -1,4 +1,4 @@
-var botão = document.querySelector('.botão');
+let botão = document.querySelector('.botão');
 
 function comparar() {
     let n1Wrap = document.getElementById('num1').value;
