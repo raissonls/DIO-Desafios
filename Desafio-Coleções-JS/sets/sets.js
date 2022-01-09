@@ -1,7 +1,6 @@
 function valoresUnicos(array){
     const aux = new Set(array);
 
-    aux.
     
     return [...aux];
 }
