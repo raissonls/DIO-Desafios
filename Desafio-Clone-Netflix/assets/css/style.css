@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Netflix Sans;
+    src: url('../css/fonts/NetflixSansRegular.ttf') format('truetype');
+}
+
+
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Elementos Bases*/
+body{
+    background-color: var(--preto);
+    font-family: 'Netflix Sans';
+    font-weight: normal;
+    color: white;
+}
+
+/*Classificações do Cabeçalho*/
+
+header .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #3030301e;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
+    height: 60px;
+}
+
+.logo{
+    width: 130px;
+    margin: 10px;
+}
+
+nav > a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 0;
+    color: #AAA;
+}
+
+nav > a:hover{
+    color: rgba(255, 255, 255, 0.897);
+    text-decoration: underline;
+}
+
+/*Relacionado ao filme principal*/
+
+.midia-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)100%), url(../img/xcZfdO0x7sMLDUFV0qJOHxMJj45.jpg);
+    height: 500px;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+main .container{
+    margin-left: 20px;
+}
+
+.titulo{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.descript{
+    width: 45%;
+    text-align: justify;
+}
+.botao{
+    background-color: rgba(255, 255, 255, 0.233);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-size: 0.8em;
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.096);
+}
