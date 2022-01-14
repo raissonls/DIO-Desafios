@@ -1,6 +1,6 @@
 @font-face {
     font-family: Netflix Sans;
-    src: url('../css/fonts/NetflixSansRegular.ttf') format('truetype');
+    src: url('../css/fonts/NetflixSansMedium.ttf') format('truetype');
 }
 
 
@@ -56,7 +56,7 @@ nav > a:hover{
 
 .midia-principal{
     font-size: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)100%), url(../img/xcZfdO0x7sMLDUFV0qJOHxMJj45.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)100%), url(../img/xcZfdO0x7sMLDUFV0qJOHxMJj45.jpg);
     height: 500px;
    background-size: cover;
    display: flex;
@@ -65,31 +65,67 @@ nav > a:hover{
    align-items: flex-start;
 }
 
-main .container{
-    margin-left: 20px;
+.container{
+    margin-left: 3%;
 }
 
 .titulo{
-    font-size: 45px;
-    font-weight: bolder;
+    width: 40%;
+    max-width: 300px;
     margin-bottom: 30px;
 }
 
 .descript{
-    width: 45%;
+    width: 40%;
+    max-width: 1000px;
+    font-weight: normal;
+    font-size: .9em;
     text-align: justify;
 }
+
+
 .botao{
     background-color: rgba(255, 255, 255, 0.233);
     color: white;
     border-radius: 5px;
     border-style: none;
-    padding: 10px;
+    padding: 10px 30px;
     margin-right: 10px;
     margin-top: 30px;
     font-size: 0.8em;
+    cursor: pointer;
+    transition: all  .5s;
 }
 
 .botao:hover{
     background-color: rgba(255, 255, 255, 0.096);
+    transform: scale(1.05);
+}
+
+.fa-play{
+    margin-right: 5px;
+}
+.fa-info-circle{
+    margin-right: 5px;
+}
+
+.box-midia{
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: all .5s;
+}
+.box-midia:hover{
+    transform: scale(1.08);
+}
+.carrosel-midias{
+    margin: auto;
+    margin-top: 20px;
+    width: 98%;
+}
+.carrosel-midias h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    justify-content: center;
 }
