@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/img/netflix_logo_icon_170919.ico" type="image/x-icon">
     <title>Clone NETFLIX</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/owl/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
 </head>
@@ -15,10 +16,19 @@
         <div class="container">
             <a href="index.html"><img class="logo" src="assets/img/logo-netflix-256.png" alt="logo netflix"></a>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Series</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentarios</a>
+                <button class="mainmenu-btn">
+                    Browser<i class="fas fa-sort-down"></i>
+                </button>
+                <div class="dropdown-child">
+                    <div></div>
+                    <a href="#">Inicio</a>
+                    <a href="#">Series</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentarios</a>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
             </nav>
         </div>
     </header>
@@ -34,7 +44,7 @@
                     <button role="button" class="botao">
                         <i class="fas fa-play"></i> Assistir Agora
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao btn-info">
                         <i class="fas fa-info-circle"></i> Mais Informações 
                     </button>
                 </div>
@@ -43,23 +53,56 @@
     </main>
 
     <div class="carrosel-midias">
-        <h2>Popular na Netflix</h2>
+        <h2 id="retorno">Popular na Netflix</h2>
         <div class="owl-carousel owl-theme">
-            <div class="item"><img class="box-midia" src="assets/img/Capa_FFH.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_EndGame.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_NWH.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_InfinityWar.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_GOT.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_PanteraNegra.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_Avatar.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_carateKid.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_DontLookUpjpg.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_Encanto.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_Euphoria.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_Matrix.jpg"></div>
-            <div class="item"><img class="box-midia" src="assets/img/Capa_skrek.jpg"></div>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_HC.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_FFH.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_NWH.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_EndGame.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_InfinityWar.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_GOT.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_PanteraNegra.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_Avatar.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_carateKid.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_DontLookUpjpg.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_Encanto.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_Euphoria.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_Matrix.jpg"></div>
+            </a>
+            <a href="#retorno">
+                <div class="item"><img class="box-midia" src="assets/img/Capa_skrek.jpg"></div>
+            </a>
         </div>
     </div>
+
+    <footer>
+        Site desenvolvido por <a target="_blanck" href="https://github.com/raissonls">Raisson Leal Silva</a>
+    </footer>
 
 
 

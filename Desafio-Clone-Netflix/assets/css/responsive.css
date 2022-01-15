@@ -1,0 +1,51 @@
+@media screen and (max-width: 700px) {
+    .mainmenu-btn {
+        display: block;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding:10px;
+        font-size: .8em;
+        font-weight: bold;
+        background: none;
+        
+    }
+    .fa-sort-down{
+        margin-left: 5px; 
+        font-size: 1.2em; 
+      }
+    .dropdown-child {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.096);
+        min-width: 150px;
+    }
+    .dropdown-child a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    nav:hover .dropdown-child {
+        display: block;
+        position: absolute;
+    }
+
+    .btn-info{
+        display: none;
+    }
+    .midia-principal{
+        background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.7)100%), url(../img/xcZfdO0x7sMLDUFV0qJOHxMJj45\(mobile\).jpg);
+        height: 500px;
+    }
+    .descript{
+        width: 60%;
+        max-width: 1000px;
+        font-weight: normal;
+        font-size: .7em;
+        text-align: justify;
+    }
+
+
+
+
+
+}

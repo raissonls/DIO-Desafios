@@ -40,14 +40,18 @@ header .container{
     margin: 10px;
 }
 
-nav > a{
+nav > button{
+    display: none;
+}
+
+nav  a{
     padding: 10px;
     text-decoration: none;
     font-weight: 0;
     color: #AAA;
 }
 
-nav > a:hover{
+nav  a:hover{
     color: rgba(255, 255, 255, 0.897);
     text-decoration: underline;
 }
@@ -64,6 +68,7 @@ nav > a:hover{
    justify-content: center;
    align-items: flex-start;
 }
+
 
 .container{
     margin-left: 3%;
@@ -128,4 +133,17 @@ nav > a:hover{
     font-size: 20px;
     font-weight: normal;
     justify-content: center;
+}
+
+footer{
+    padding: 20px;
+    background: #3030301e;
+    text-align: center;
+    font-weight: 0;
+    font-size: .9em;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }
