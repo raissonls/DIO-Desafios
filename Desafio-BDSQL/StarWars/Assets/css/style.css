@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	height: 100vh;
+	margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.9)90%), url(../img/Starfield.jpg);
+    color: white;
+}
+
+button {
+	border: 0;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	padding: 16px;
+	background: #FCF837;
+	color: black;
+	margin: 20px 0;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+.ctrl:hover {
+	background: linear-gradient(rgba(0, 255, 0, 0.6),rgba(0, 0, 0, 0.1)100%);
+    color: white;
+}
+.sinc:hover {
+	background: linear-gradient(rgba(255, 0, 0, 0.6),rgba(0, 0, 0, 0.1)100%);
+    color: white;
+}

@@ -13,7 +13,6 @@ const getCats = async () => {
     } catch (error) {
         console.log(error.message);
     }
-
 };
 
 const loadImg = async () => {
