@@ -1,0 +1,26 @@
+@media screen and (max-width: 420px) {
+    #logo{
+        height: 60px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in .5s;
+    }
+    
+    nav{
+        margin-right: 0px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        width: 60%;
+    }
+    header{
+        justify-content: space-between;
+    }
+}

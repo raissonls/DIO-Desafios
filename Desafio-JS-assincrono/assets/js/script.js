@@ -21,4 +21,5 @@ const loadImg = async () => {
 
 catBotão.addEventListener('click', loadImg);
 
-loadImg();
+console.log(catBotão);
+//loadImg();
