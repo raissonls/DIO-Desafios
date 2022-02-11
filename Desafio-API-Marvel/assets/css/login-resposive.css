@@ -1,0 +1,46 @@
+@media screen and (min-height: 720px) {
+    header{
+        height: 250px;
+    }
+    footer{
+        height: 150px;
+    }
+
+}
+@media screen and (min-height: 900px) {
+    header{
+        height: 300px;
+    }
+    footer{
+        height: 200px;
+    }
+
+}
+@media screen and (min-height: 1000px) {
+    header{
+        height: 400px;
+    }
+    footer{
+        height: 300px;
+    }
+
+}
+@media screen and (min-height: 1200px) {
+    body{
+        zoom: 1.7em;
+    }
+    header{
+        height: 450px;
+    }
+    footer{
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 290px) {
+    section{
+        width: 200px;
+    }
+
+}

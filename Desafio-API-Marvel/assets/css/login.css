@@ -1,0 +1,82 @@
+header{
+    background: transparent;
+    justify-content: center;
+    height: 150px;
+}
+#logo{
+    width: auto;
+    margin: 0px;
+}
+section{
+    background-color: whitesmoke;
+    width: 320px;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 30px;
+}
+section > div{
+    color: black;
+    width: 80%;
+    margin: 0px;
+}
+section > div > p{
+    font-size: .9em;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+.entrada{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+}
+section input{
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    background: #d1cbcb3a;
+}
+section button{
+    
+    margin: 0px;
+    width: 100%;
+}
+
+footer{
+    background: transparent;
+    height: 70px;
+}
+
+.load{
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    border: 6px solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    color: rgb(255, 12, 24);
+    animation: load .6s linear 5;
+}
+.cadastro{
+    justify-content: end;
+    margin: 10px;
+    font-size: .6em;
+}
+.cadastro> a{
+    text-decoration: none;
+    color: rgb(255, 12, 24);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .5s;
+}
+.cadastro >a:hover{
+    transform: scale(1.1);
+}
+
+@keyframes load {
+    to{
+        transform: rotate(360deg);
+    }
+}
