@@ -27,7 +27,7 @@ const Card = () => {
                 <Button 
                 function={Subtrair} 
                 className="btn btn-danger">
-                    Subtrair
+                    Remover
                 </Button>
                 <p className="card-text">
                     {valor}
