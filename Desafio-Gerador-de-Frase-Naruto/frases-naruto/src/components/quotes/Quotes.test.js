@@ -1,19 +1,28 @@
-import {render, screen} from '@testing-library/react';
-import '@testing-library/jest-dom'
-import Quotes from "./Quotes.js";
+import { render, screen, fireEvent } from '@testing-library/react';
+import { Quotes } from './Quotes';
 
-const quote = 'Test quote';
-const speaker = 'randon speaker';
+const quote = 'test quote';
+const speaker = 'random speaker';
 
-test('renders recived quote with an button, speaker and a button', () =>{
-    render(<Quotes Quote={quote} Speaker={speaker}/>);
+test('renders received quote, speaker and a button', () => {
+  render(<Quotes quote={quote} speaker={speaker} />);
 
-    const buttonEl = screen.getByRole('button');
-    const QuoteEl = screen.getByText(quote);
-    const SpeakerEl = screen.getByText(`- ${speaker}`);
+  const quoteEl = screen.getByText(/test quote/i);
+  const speakerEl = screen.getByText(/random speaker/i);
+  const buttonEl = screen.getByRole('button');
 
+  expect(quoteEl).toBeInTheDocument();
+  expect(speakerEl).toBeInTheDocument();
+  expect(buttonEl).toBeInTheDocument();
+});
 
-    expect(buttonEl).toBeInTheDocument();
-    expect(QuoteEl).toBeInTheDocument();
-    expect(SpeakerEl).toBeInTheDocument();
+test('calls a callback when button is pressed', () => {
+  const callback = jest.fn();
+
+  render(<Quotes quote={quote} speaker={speaker} onUpdate={callback} />);
+
+  const buttonEl = screen.getByRole('button');
+
+  fireEvent.click(buttonEl);
+  expect(callback).toHaveBeenCalledTimes(1);
 });

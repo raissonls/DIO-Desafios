@@ -1,26 +1,51 @@
-import narutoimg from "../../images/naruto.png"
-import styled from "styled-components";
-import Quotes from "../../components/quotes/Quotes";
+import { useState, useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import narutoImg from '../../images/naruto.png';
+import jutsoSound from '../../sounds/jutso.mp3';
+import { Quotes } from '../../components';
+import { getQuote } from '../../services';
 
-function App() {
+const audio = new Audio(jutsoSound);
+
+
+export function App() {
+const isMounted = useRef(true);
+  const [quoteState, setQuoteState] = useState({quote:'Loading Quote', speaker:'Loading Speaker'});
+
+  useEffect(()=> {
+    onUpdate();
+
+    return() =>{
+      isMounted.current = false;
+    };
+  },[])
+
+  const onUpdate = async () => {
+    const quote = await getQuote();
+    if (isMounted.current){
+      audio.play();
+      setQuoteState(quote);
+    }
+  };
   return (
     <Content>
-      <Quotes Quote='Quotes' Speaker='Speaker'/>
-      <Naturoimg src={narutoimg} alt="Naruto holding a Kunai"/>
+      <Quotes {...quoteState} onUpdate={onUpdate} />
+      <NarutoImg alt="Naruto holding a kunai" src={narutoImg} />
     </Content>
   );
 }
 
 const Content = styled.div`
-    heigth: 100vh;
-    padding: 0 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-const Naturoimg = styled.img`
-   max-width: 50vw;
-   align-self: flex-end;
-`
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`;
 
-export default App;
+const NarutoImg = styled.img`
+  max-width: 50vw;
+  align-self: flex-end;
+`;
